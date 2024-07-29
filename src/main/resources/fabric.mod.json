@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "nofoodstack",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "No Food Stack",
+  "description": "Reverts food stacking behaviour to BTA 7.1.",
   "authors": [
-    "Turnip Labs"
+    "Aurailus"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Aurailus/bta-no-food-stack",
+    "sources":  "https://github.com/Aurailus/bta-no-food-stack",
+    "issues":  "https://github.com/Aurailus/bta-no-food-stack/issues"
   },
 
 	"icon": "icon.png",
@@ -19,24 +20,24 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"aurailus.nofoodstack.NoFoodStack"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"aurailus.nofoodstack.NoFoodStack"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"aurailus.nofoodstack.NoFoodStack"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"aurailus.nofoodstack.NoFoodStack"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "nofoodstack.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "~7.1",
+		"minecraft": "^7.2-beta",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
