@@ -1,7 +1,7 @@
 package aurailus.nofoodstack;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.core.item.Item;
+import net.minecraft.core.item.Items;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,19 +18,19 @@ public class NoFoodStack implements ModInitializer, GameStartEntrypoint, RecipeE
 	}
 
 	@Override public void afterGameStart() {
-		Item.foodApple.setMaxStackSize(1);
-		Item.foodStewMushroom.setMaxStackSize(1);
-		Item.foodBread.setMaxStackSize(1);
-		Item.foodPorkchopRaw.setMaxStackSize(1);
-		Item.foodPorkchopCooked.setMaxStackSize(1);
-		Item.foodAppleGold.setMaxStackSize(1);
-		Item.foodFishRaw.setMaxStackSize(4);
-		Item.foodFishCooked.setMaxStackSize(4);
-		Item.foodCookie.setMaxStackSize(8);
-		Item.foodCherry.setMaxStackSize(2);
-		Item.bucketIcecream.setMaxStackSize(1);
-		Item.foodPumpkinPie.setMaxStackSize(1);
-		Item.foodCake.setMaxStackSize(1);
+		Items.FOOD_APPLE.setMaxStackSize(1);
+		Items.FOOD_STEW_MUSHROOM.setMaxStackSize(1);
+		Items.FOOD_BREAD.setMaxStackSize(1);
+		Items.FOOD_PORKCHOP_RAW.setMaxStackSize(1);
+		Items.FOOD_PORKCHOP_COOKED.setMaxStackSize(1);
+		Items.FOOD_APPLE_GOLD.setMaxStackSize(1);
+		Items.FOOD_FISH_RAW.setMaxStackSize(4);
+		Items.FOOD_FISH_COOKED.setMaxStackSize(4);
+		Items.FOOD_COOKIE.setMaxStackSize(8);
+		Items.FOOD_CHERRY.setMaxStackSize(2);
+		Items.BUCKET_ICECREAM.setMaxStackSize(1);
+		Items.FOOD_PUMPKIN_PIE.setMaxStackSize(1);
+		Items.FOOD_CAKE.setMaxStackSize(1);
 	}
 
 	@Override	public void beforeGameStart() {}
