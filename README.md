@@ -12,6 +12,6 @@ All food items stack to 1, except for the following exceptions, which already st
 
 Combine with `/gamerule instantHealing true` for best experience ;)
 
-Happy gaming!
+[Modrinth](https://modrinth.com/mod/bta-no-food-stack)
 
 Made with :heart: by [Aurailus](https://aurailus.com)
