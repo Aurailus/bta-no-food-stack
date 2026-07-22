@@ -21,25 +21,18 @@
   "entrypoints": {
     "main": [
 			"aurailus.nofoodstack.NoFoodStack"
-    ],
-		"beforeGameStart": [
-			"aurailus.nofoodstack.NoFoodStack"
-		],
-		"afterGameStart": [
-			"aurailus.nofoodstack.NoFoodStack"
-		],
-		"recipesReady": [
-			"aurailus.nofoodstack.NoFoodStack"
-		]
+    ]
 	},
   "mixins": [
       "nofoodstack.mixins.json"
   ],
 
   "depends": {
+		"fabricloader": ">=${fabricloader}",
 		"minecraft": "*",
-    "fabricloader": ">=0.15.5"
+		"java": ">=${java}"
   },
   "suggests": {
+		"modmenu": ">=${modmenu}"
   }
 }

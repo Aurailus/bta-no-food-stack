@@ -45,9 +45,15 @@ pluginManagement {
 				)
 			)
 		) { name = "Fabric" }
-		maven("https://jitpack.io") { name = "Jitpack" }
 		maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
 		mavenCentral()
 		gradlePluginPortal()
 	}
+	val foojayResolverVersion = providers.gradleProperty("foojay_resolver_version")
+	plugins {
+		id("org.gradle.toolchains.foojay-resolver-convention").version(foojayResolverVersion.get())
+	}
+}
+plugins {
+	id("org.gradle.toolchains.foojay-resolver-convention")
 }

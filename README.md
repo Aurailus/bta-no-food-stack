@@ -12,6 +12,12 @@ All food items stack to 1, except for the following exceptions, which already st
 
 Combine with `/gamerule instantHealing true` for best experience ;)
 
+## Building (Command Line)
+
+1. Install Temurin JDK 17
+2. `./gradlew build`
+3. Distribute the generated JAR file in `./build/lib`.
+
 [Modrinth](https://modrinth.com/mod/bta-no-food-stack)
 
 Made with :heart: by [Aurailus](https://aurailus.com)
